@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<h1>Peer Reviews</h1>
+<h2>Dessa peers har vi fått<h2>
+<h3>Workshop 1</h3>
+<h4>Första</h4>
+1. There are no association names. Try putting in some; this will make the whole model more
+
+readable.
+
+2. We don’t understand what the domain model shows. For example: member is connected
+
+to boat. We don’t know why and there is no obvious connection between them. We don’t
+
+know what’s happening between these two classes. You tried to explain this by adding some
+
+attributes and operations inside the boat class, but it would be much more readable if you
+
+used association names instead.
+
+3. The main problem for the boat club was boat registration and berth assignment. This is
+
+unfortunately not inside your model.
+
+4. What do you mean by “Booking”? We’re not sure what it does or what does it do. “Booking”
+
+could be an association instead of a separate class.
+
+5. Look at the classes “Login”, “Event” and “Calendar”. Do you really need them? The main
+
+problem for boat club was boat registration and berth assignment. Authentication will not
+
+be a big problem during implementation and calendar/events were not main issue for the
+
+boat club.
+
+If you would improve the points we listed, we think you would pass for grade 3.
+Good luck!
+<h4>Andra</h4>
+Era domän modell ser tydlig och omfattad ut.
+
+Strukturen ser god ut och det är lätt att ser hur alla olika klasser förbindas tillsammans.
+
+Klasserna verkar har ett korrekt användning av attributionerna.
+
+En sammanfattning av vad som är bra:
+
+1 – Rätt användning av attributionerna.
+
+2 - Alla krävande attributionerna finns i modellen.
+
+3 - Klasserna förbindas rätt med varandra.
+
+4 - Alla krävande klasser finns i modellen.
+
+5 - Inte för många eller för lite detaljer i modellen.
+
+6 - Rätt användning av klasserna.
+
+Det finns dock några punkter var modellen kan förbättras på:
+
+1 - Använd text med en ”association” som ”books”, ”assigns”, ”owns” och så vidare så att det
+
+blir tydligare vad en ”association” innehåller.
+
+2 - Försök inte att krossa linjerna med så många associationerna.
+
+3 - Några detailjer (tex. attributionerna) är svårt att läsa och bort strukit. Gärna undviker detta.
+
+En små tips för er är att använda ett fritt online UML modellering program eller nåt liknade så att er
+
+modell ser mer professionell ut. Särskilt er första bilden kunde omstruktureras på olika platser så det
+
+inte kommer att liknar ett webb av kaos. Men detta borde inte var ett stor problem inför betyg 3.
+
+Också försök att skapa ett test modell först, var er kan fritt sudda bort och snabbt skriv ner alla
+
+detaljer. Sedan skapa er modell på nytt på papper utan att styrka bort detailjer och använda ett tydlig
+
+läsbar stil för text (jag kan för exempel inte läsa vilken attribut klassen ”Delete Boat” har).
+
+Konklusion:
+
+Beträffande modellen själv är jag säkert att ni kan få betyg 3. Det borde dock vara bättre att det
+
+ser om er modell är digital så det kommer att ser snyggare är och därmed mer professionell och
+
+strukturerad.
+
+<h3>Workshop 2</h3>
+<h4>Första</h4>
+WORKSHOP 2
+
+­ Peer review för betyg 3 ­ ​Tobias Holst, Martin Fohlin
+
+Sammanfattning
+
+Applikationen fungerade bra att testa då den finns publikt upplagd.
+
+Implementation
+
+Namngivningen är konsekvent och bra! Inte mycket kodduplicering.
+
+Memberid hanteras på ett korrekt sätt då det sätts ett unikt id och hanteras i databasen.
+
+Koden är bra och lättöverskådlig, fast något begränsad. Det verkar också finnas vissa klasser
+
+kvar som är tomma och inte fyller någon funktion.
+
+De starkaste punkterna enligt oss var designen (klassdiagrammet och sekvensdiagrammen)
+
+och att koden var tydlig och följer MV, bra kodkvalitét.
+
+Tyvärr verkar det som att det är för lite kod för att uppfylla kraven (ev att något saknas som gör
+
+att det buggar för oss). Applikationen uppfyller alltså en del av kraven för betyg 3, men det verkar
+
+som det saknas lite för att nå målet helt. Vi blev väldigt förvirrade när vi testade applikationen då
+
+saker ibland fungerade att utföra för att sedan gå tillbaka till hur det var innan igen och tvärt om.
+
+Längre ned i dokumentet finns en lista om vad som vi tyckte fungerade bra och vad som
+
+saknades.
+
+Design
+
+Klassdiagrammet var väldigt tydligt och lättöverskådligt och det mesta verkar stämma bra!
+
+Sekvensdiagrammen var tydliga och skulle underlätta vid implementation.
+
+Koden stämmer bra gentemot diagrammen, vi har bara några få förslag på korrigeringar som vi
+
+lade märke till:
+
+I sekvensdiagrammen
+
+Vi saknar funktioner vid vissa pilar, lite klurigt att veta exakt vad som händer.
+
+I klassdiagrammet ­ Boatrepository
+
+Bör ha dependecy till boat istället för association eftersom den enbart tar boat som en
+
+inparameter.
+
+Vi hittar ingen dependency till member(som ni har angett i klassdiagrammet).
+
+I klassdiagrammet ­ Member
+
+Annie Sahlberg 141017
+
+Maria Nygren Linnéuniversitetet
+
+Vi är osäkra på om det är verkligen är en dependency mellan member och boat, i och med att
+
+member aldrig tar boat­objekt i konstruktorn (utan bara en variabel som kan sättas till vad som
+
+helst).
+
+Test av krav för applikationen.
+
+Grönt : Krav fungerar
+
+Orange: Krav fungerar delvis
+
+Rött: Krav fungerar inte
+
+Följande krav avgränsar uppgiften:
+
+1. Skapa en ny medlem med namn, personnummer och unikt medlemsnummer skall
+
+genereras.
+
+2. Lista alla medlemmar på två sätt:
+
+○ “kompakt lista”; med namn, medlemsnummer och antal båtar
+
+○ “fullständig lista”; med namn, personnummer, medlemsnummer och båtar
+
+med båtinformation.
+
+3. Ta bort en medlem
+
+Det tar en stund innan medlemmen försvinner: först finns den kvar i fullständiga listan, och om
+
+man klickar tillbaka från den fullständiga listan finns medlemen kvar i den kompakta listan, och
+
+man kan även gå in på medlemmen och se dess uppgifter.
+
+Sedan försvann medlemmen helt. (vi är lite förvirrade själva utav detta så det är svårt att
+
+formulera det tydligt).
+
+4. Ändra en medlems uppgifter
+
+När man ändrar en medlem blir den uppdaterad i den kompakta listan, men inte i den
+
+fullständiga listan. När man sedan går tillbaka till den kompakta listan återfår medlemmen dens
+
+gamla värden igen.
+
+5. Titta på en specifik medlems uppgifter
+
+Annie Sahlberg 141017
+
+Maria Nygren Linnéuniversitetet
+
+6. Registrera en ny båt på en medlem med båttyp (Segelbåt, Motorseglare,
+
+Motorbåt, Kajak/Kanot, Övrigt) och längd
+
+Den kompakta listan blir uppdaterad, men om man går till den fullständiga listan och tillbaka så
+
+kommer dom gamla värdena tillbaka. Det tar en stund innan det blir uppdaterat, man måste
+
+klicka fram o tillbaka och ibland funkar det och ibland inte.
+
+7. Ta bort en båt
+
+Försvinner först i den kompakta men inte i den fullständiga. För att sedan komma tillbaka i den
+
+kompakta listan.
+
+8. Ändra en båt
+
+Ingenting ändras.
+
+9. Persistens (dvs registret skall sparas och laddas t.ex. från en textfil)
+
+10. Strikt Model­Vy separation (d.v.s. Modellen skall ej innehålla några som helst
+
+kopplingar till vyn, eller användargränssnittet, användargränssnittet skall ej
+
+utföra domänfunktioner)
+
+11. God kodkvalité (t.ex. konsekvent kodstandard, ingen kodduplicering)
+
+Kodstandarden var bra, dock lite för lite kod för att kunna uppfylla kraven.
+
+13. Enkel felhantering. Applikationen ska inte krascha vid felaktig inmatning men det
+
+behövs ingen användarvänlig felhantering.
+
+Applikationen krashar inte, men man kan fylla i vilka uppgifter som helst ex. bokstäver som
+
+personnummer.
+
+<h4>Andra</h4>
+Peer review Workshop 2 Tobias Holst
+
+Live testning
+
+När vi testar applikationen på angedd länk så tar det väldigt långt tid innan medlemmen man lagt till
+
+visas. När man först lägger till en medlem så syns den i listan, men när man uppdaterar igen så finns
+
+den inte kvar. Om man sedan vill lägga till en båt så syns den senaste tillagda medlemmen och båten
+
+man lagt till på en medlem men om man går tillbaka till fullständig lista och går tillbaka så är det som
+
+inget har hänt. Inte föränn efter ca 7-8 min så finns allt man lagt till med i listan igen.
+
+När man går till fullständing lista så upprepas en medlem beroende på antal båtar som medlemmen
+
+äger. Detta är lite förvirrande då det ser ut som att det finns många fler medlemmar än det
+
+egentligen gör. Tekniskt sett så är listan fullständing men egentligen skulle alla båtar synas på en
+
+medlem istället för att varje båt listas tillsammans med sin medlem.
+
+Kompilering och körning
+
+Det fanns inga körinstuktioner men vi hade inga problem med att köra applikationen. Dock så kunde
+
+vi inte kompilera och köra applikationen själva då det inte fanns några databas-backups eller sql
+
+tillgänglia för att rekonstruea databasen.
+
+Diagram
+
+Sekvensdiagrammen stämmer inte överens med implementationen på ett antal ställen. Memberview
+
+kallar inte på doControl i koden. Funktioner returnerar oftast inte något enligt diagrammen (ska de
+
+inte returnera något värde så ska man ändå returneras till där funktionen kördes). Det finns inget
+
+diagram på mainloopen som visar vilken klass som skapar vad vilket hade varit bra att ha. I vissa finns
+
+det pilar utan förklarande text så man vet inte vad som görs i koden.
+
+Det saknas några namespaces i klassdiagrammet som skulle göra det lättare att läsa (endast model
+
+på repository).
+
+Implementering
+
+Det finns två klasser som inte används (membermodel och memberlist) och borde i så fall tas bort då
+
+de inte tillför något i applikationen.
+
+Annars ser implementationen okej ut.
+
+Betyg 3
+
+Vi tycker inte att designen har uppnåt betyg 3 i nuläget. Sekvensdiagrammen behöver ändras så de
+
+stämmer överens med implementationen. Ta en titt på de som Tobias gjorde för blackjack-spelet
+
+</body>
+</html>
