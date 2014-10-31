@@ -36,7 +36,7 @@
         Vi ser att du sätter meddelanden i controllern och i modellen, dessa borde vara i vyn.</p>
     <p>
 
-        Koden ser bra ut och det finns inga dupliceringar vad vi kan hitta och all kod används det vil säga
+        Koden ser bra ut och det finns inga dupliceringar vad vi kan hitta och all kod används det vill säga
 
         det finns ingen död kod.</p>
     <p>
@@ -103,53 +103,62 @@
         Om du framförallt fixar klassdiagrammet så kommer du att klara betyg 3.</p>
 
     <h3>Peer Review 2</h3>
-    <p>Hej Markus
+    <h4>Hej Markus</h4>
+    <p>
 
-        Vi har utfört peer reviewn för Workshop 2
+        Vi har utfört peer reviewn för Workshop 2 och här kommer vå feedback:</p>
+    <p>
 
         I klassdiagrammet så använder du aggregations från main till boat och main till member och vi
 
-        tycker att du borde ha en vanlig association här istället. Resten av klassdiagrammet ser bra ut.
+        tycker att du borde ha en vanlig association här istället. Resten av klassdiagrammet ser bra ut.</p>
+    <p>
 
-        I sekvensdiagrammet Titta på en specifik medlems uppgifter så borde du ha två streck, det vill
+        I sekvensdiagrammet <strong>Titta på en specifik medlems uppgifter</strong> så borde du ha
+        en pil från GetMemberInfo till Boat och sedan en pil från Boat till GetMemberInfo istället för ett
 
-        säga en pil från GetMemberInfo till Boat och sedan en pil från Boat till GetMemberInfo istället för 1
+        streck med dubbla pilar på.</p>
+    <p>
 
-        streck med dubbla pilar på.
+        I sekvensdiagrammet <strong>Visa medlemmar (Full och kompakt)</strong> så saknas det lite pilar. Från Member
 
-        I sekvensdiagrammet Visa medlemmar (Full och kompakt) så saknas det lite pilar från Member
+        till FullList borde det returneras något. Som det ser ut nu kallar du bara på Get full member info men inget
 
-        till FullList borde det returneras något nu kallar du bara på Get full member info men inget
+        returneras till Fullis.</p>
+    <p>
 
-        kommer tillbaka till Fullist så egentligen finns det ingen lista för vyn att presentera. Det borde
+        Det borde även vara en pil från Boat till FullList som returnerar alla båtar.</p>
+    <p>
+        <strong>Search for number of boats</strong> borde
 
-        även vara en pil från Boat till FullList som returnerar alla båtar. Search for number of boats borde
+        ha två streck istället för bara ett. Du borde ha ett som kallar på Search for number of boats och en som
 
-        ha två streck istället för bara ett, ett som kallar på Search for number of boats och en som
+        returnerar den listan.</p>
+    <p>
+        Från Member till Compact list ska det också vara en pil som returnerar
 
-        returnerar den listan. Från Member till Compact list ska det också vara en pil som returnerar
+        member info för som det är nu så kallar du bara på den funktionen men inget returneras.</p>
+    <p>
+        Annars ser det ok ut.</p>
+    <p>
 
-        member info, för som det är nu så kallas bara den funktionen men inget returneras. Annars ser
-
-        det ok ut.
-
-        Main metoden är väldigt stor vilket resulterar i att den blir svår att förstå men vi ser att du har en
+        Main metoden är väldigt stor vilket resulterar i att den blir svår att förstå. Vi ser att du har en
 
         del model grejer i vyn till exempel save, add, remove och edit vilka borde ligga i modellen i stället.
 
-        Annars är koden bra.
+        Annars är koden bra.</p>
+    <p>
 
         Som en utvecklare så förstår man hur programmet ska fungera och se ut, så
 
-        sekvensdiagrammen och klassdigrammet är bra gjorda.
+        sekvensdiagrammen och klassdigrammet är bra gjorda.</p>
+    <p>
 
-        Det som är bra med desigenen och implementationen är att koden är välskriven och all kod
+        Det som borde fixas föra att uppnå betyg 3 är att model grejerna i main metoden som är eran vy
 
-        används.
+        ska flyttas till model-klasser.</p>
+    <p> Sedan bör också diagrammen fixas till med det vi har nämnt</p>
 
-        Det som borde fixas föra att uppnå betyg 3 är att modell grejerna i main metoden som ä eran vy
-
-        ska flyttas till modell klasser. Sedan bör också diagrammen fixas till lite med pilar och sådant.</p>
     <h3>Peer Review Received 1</h3>
     <p>Live testning
 
