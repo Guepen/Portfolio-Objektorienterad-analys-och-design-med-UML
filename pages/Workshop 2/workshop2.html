@@ -23,9 +23,9 @@
 
     <p><img width="500" src="ShowMember.png"></p>
 
-    <p><img width="500" src="RemoveBoat.png"></p>
+    <p><img width="529" src="RemoveBoat.png"></p>
 
-    <p><img width="500" src="RemoveMember.png"></p>
+    <img width="535" src="RemoveMember.png">
     <h3>Peer Reviews sent</h3>
     <h4>Peer Review Marco</h4>
     <p>
@@ -38,59 +38,70 @@
 
         Koden ser bra ut och det finns inga dupliceringar vad vi kan hitta och all kod används det vil säga
 
-        det finns ingen död kod.
+        det finns ingen död kod.</p>
+    <p>
 
-        Vi ser även att du inte har några relationer mellan klasserna i klassdiagrammet förutom arvet till
+        Vi ser att du inte har några relationer mellan klasserna i klassdiagrammet förutom arvet till
 
-        repositoryklassen. Detta måste du fixa.
+        repositoryklassen. Detta måste du fixa.</p>
+    <p>
 
-        I sekvensdiagrammen Add member och Edit member så har du en loop och den förtår vi inte
+        I sekvensdiagrammen <strong>Add member och Edit member</strong> så har du en loop och den förtår vi inte
 
-        varför du har. Ska du verkligen ha den?
+        varför du har. Ska du verkligen ha den?</p>
+    <p>
 
-        I sekvensdiagrammet Remove member så bör du väl ha en pil från Membercontroller till vyn som
+        I sekvensdiagrammet <strong>Remove member</strong> så bör du ha en pil från Membercontroller till vyn som
 
         hämtar ID:t. Du bör också ha en pil från Membercontroller till MemberRepositoryt som skickar
 
-        med Id från vyn.
+        med Id från vyn.</p>
+    <p>
 
-        I sekvensdiagrammet View member så saknar du en pil från membercontroller till MemberView
+        I sekvensdiagrammet <strong>View member så</strong> saknar du en pil från membercontroller till MemberView
 
-        som hämtar ut ID. Du bör också ha en pil från memberController till MemberRepository som
+        som hämtar ut IDt. Du borde också ha en pil från memberController till MemberRepository som
 
-        skickar ID. Du bör också ha en pil från memberController till BoatRepository som skickar ID.
+        skickar IDt. Du saknar även en pil från memberController till BoatRepository som skickar IDt.</p>
+    <p>
 
-        I sekvensdiagrammen Add boat och Edit boat så har du en loop och den förtår vi inte varför du
+        I sekvensdiagrammen <strong>Add boat och Edit boat</strong> så har du en loop och den förtår vi inte varför du
 
-        har. Ska du verkligen ha den?
+        har. Ska du verkligen ha den?</p>
+    <p>
 
-        I sekvensdiagrammet Remove boat så bör du väl ha en pil från Boatcontroller till vyn som hämtar
+        I sekvensdiagrammet <strong>Remove boat</strong> så bör du ha en pil från Boatcontroller till vyn som hämtar
 
-        ID:t. Du bör också ha en pil från Boatcontroller till BoatRepositoryt som skickar med Id från vyn.
+        ID:t. Du bör också ha en pil från Boatcontroller till BoatRepositoryt som skickar med Id från vyn.</p>
+    <p>
 
-        I sekvensdiagrammet Compact list så saknas en pil från MemberController till
+        I sekvensdiagrammet <strong>Compact list</strong> så saknas en pil från MemberController till
 
-        MemberRepository som hämtar alla Members, sedan får du väll tillbaka en lista som innehåller
+        MemberRepository som hämtar alla Members, sedan får du tillbaka en lista som innehåller
 
-        alla medlemmar och inte ID. Så den parametern med (ID) ska bort. Sedan ska du även skicka
+        alla medlemmar och inte ett ID så parametern med (ID) ska bort. Sedan ska du även skicka
 
         med listan när du kallar på vyn. Det saknas också en pil från MemberView till BoatRepository
 
-        som hämtar antalet båtar som en Member har.
+        som hämtar antalet båtar som en Member har.</p>
+    <p>
 
-        I sekvensdiagrammet Verbose list saknar du en pil fårn MemberController till MemberRepository
+        I sekvensdiagrammet <strong>Verbose list</strong> saknar du en pil fårn MemberController till MemberRepository
 
         som hämtar alla medlemmar och sedan så ska inte MemberRepository retunera något ID utan
 
         en lista. Sedan borde du skicka med listan till MemberView. Sedan saknas en pil från
 
-        MemberView till BoatRepository som hämtar alla båtar.
+        MemberView till BoatRepository som hämtar alla båtar.</p>
+    <p>
 
-        Som en developer skulle jag inte förstå klassdiagrammet då det inte finns några relationer till de
+        Som en utvecklare skulle jag inte förstå klassdiagrammet då det inte finns några relationer till de
 
-        andra klasserna.
+        andra klasserna.</p>
+    <p>
 
-        Om du fixar klassdiagrammen framförallt så kommer du att klara betyg 3.</p>
+        Om du framförallt fixar klassdiagrammet så kommer du att klara betyg 3.</p>
+
     <h3>Peer Review 2</h3>
     <p>Hej Markus
 
