@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>Workshop 3</h1>
+<a href="https://github.com/th222fa/UMLWorkshop3">Länk till repositoriet på github</a>
+<h4>Peer review, produced 1</h4>
+<p>
+Efter att ha titat igenom applikation så har vi hittat ett par saker som vi inte tycker riktigt håller.</p>
+<ul>
+<li>För att se input använder du dig av vygrejer i kontrollen.</li>
+<li>I standmetoden
+i model så printas det ut till användaren. detta är också en vygrej.</li>
+    <li>Det finns inga dolda kort. Dealern visar alltid korten.</li>
+<li>Det finns fortfarande kvar duplicerad kod i internationNewGameStrategy.</li>
+<li>Det finns inget oberserver pattern</li>
+<li>Det finns ingen väntetid mellan kortens utdelning</li>
+</ul>
+<p>
+Bortsett från detta så tycker vi att strategy pattern för olika rules är bra löst och UML är
+uppdaterat.
+Uppgiften uppnår inte kriterierna för betyg 3.</p>
+
+<h4>Peer review, produced 2</h4>
+<p>
+Du ha använt konstanter för att bli av med
+strängberoendet. Vi anser att denna lösningen fungerar bra.</p>
+<p>
+Vi anser att observer patternet är korrekt implementerat.</p>
+<p> Korrekt implementation av strategy
+pattern.</p>
+<p> Soft17 regeln tas även hand om på ett korrekt sätt.</p>
+<p>
+Vi hittade inga problem när vi testkörde applikationen, den fungerade som den ska.</p>
+<p>
+Ett par saker som vi anser att skulle behöva ses över är:
+</p>
+<ul>
+<li>Duplicerad kod kvar i dealern, stand metoden.</li>
+    <li>klassdiagramet var uppdaterat men med relationsfel mellan Dealer och standard
+rulesset.</li>
+</ul>
+    <p>
+Vi anser att uppgiften klarar nivå 3.</p>
+
+<h4>Try to compile/use the source code provided. Can you get it up and running? Is
+
+anything problematic?</h4>
+<p>
+
+  we did not found anything problematic.</p>
+<h4>
+
+Test the runnable version of the application in a realistic way. Note any
+
+problems/bugs.</h4>
+<p>
+
+No problem funning the application.</p>
+<h4>
+
+Does the implementation and diagrams conform (do they show the same
+
+thing)?</h4>
+<p>
+
+Empy class still in the program (base.cs).
+
+The SoftSevenTeen class is missing in the Class Diagram.
+
+The HardStrategy class should inherit from IWinRule.
+
+The AmericanNewGameStrategy class should inherit from INewGameStrategy.</p>
+<h4>
+
+Is the dependency between controller and view handled? How? Good? Bad?</h4>
+<p>
+
+It looks good.</p>
+<h4>
+
+Is the Strategy Pattern used correctly for the rule variant Soft17?</h4>
+<p>
+
+Yes.</p>
+<h4>
+
+Is the Strategy Pattern used correctly for the variations of who wins the game?</h4>
+<p>
+
+Yes, also looking good.</p>
+<h4>
+
+Is the duplicate code removed from everywhere and put in a place that does
+
+not add any dependencies (What class already knows about cards and the
+
+deck)? Are interfaces updated to reflect the change?</h4>
+<p>
+
+As far as we can see, there is no unnecessary duplicated code.</p>
+<h4>
+
+Is the Observer Pattern correctly implemented?</h4>
+<p>
+
+Yes, it allows subscribers.</p>
+<h4>
+
+Is the class diagram updated to reflect the changes?</h4>
+<p>
+
+.Yes</p>
+<h4>
+
+Do you think the design/implementation has passed the grade 3 criteria?</h4>
+<p>
+
+Yes, this application passes grade 3, however the class diagram should be updated.</p>
+
+
+</body>
+</html>
