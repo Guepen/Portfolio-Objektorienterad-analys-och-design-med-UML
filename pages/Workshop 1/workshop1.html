@@ -6,69 +6,104 @@
 </head>
 <body>
     <a href="http://mf222nb.github.io/1DV407-Portfolio/">Tillbaka</a>
-    <p><img src="Workshop%201.JPG" width="700px" height="500px"></p>
     <p>Första modellen som gjordes</p>
-    <img src="Workshop_1_2.JPG" width="700px" height="500px">
-    <p>Så som jag har tänkt med denna modell är att på medlemsklassen så har jag roll med som ett attribut för att
-    skilja på de som är vanliga medlemmar och de som har lite mera ansvar i klubben som sekreterare som kan regristrera
-    händelser till exempel. Alla medlemmar kan bara ha ett inlogg och de kan regristrera hur många båtar som helst. I båt
-    klassen har jag även lagt metoder som tillhör båten som en medlem kan göra det vill säga registrera nya båtar, ta bort
-    båtar och ändra befentliga båtar. I bokningsklassen har jag gjort så att de attribut som ligger där i är metoder som
-    gör lite olika saker, till exempel boka händelse som bara en sekreterare kan göra och så vidare. Vid sidan av bokning
+    <p><img src="Workshop%201.JPG" width="500" height="300"></p>
+    <img src="Workshop_1_2.JPG" width="500" height="300">
+    <p>Så som vi har tänkt med denna modell är att på medlemsklassen så finns det ett attribut för roll för att
+    skilja på de som är vanliga medlemmar och de som har lite mer ansvar i klubben som sekreterare.</p>
+    <p>
+        En sekreterare kan boka
+    händelser till exempel.</p>
+    <p>
+        Alla medlemmar kan bara ha ett inlogg och de kan regristrera hur många båtar som helst. I båt-klassen har vi även
+        efter disskusion med lärare lagt till metoder för att beskriva vad som en medlem(läs sekreterare) kan göra.</p>
+    <p>
+    I bokningsklassen har vi gjort så att de metoder som finns där beskriver vilka händelser som kan bokas.</p>
+    <p> Till exempel boka händelse som bara en sekreterare kan göra och så vidare. Vid sidan av bokning
     så står det vad de olika metoderna kräver för att kunna fungera som till exempel boka en händelse så måste man vara sekreterare.
-    Händelse klassen har jag kopplat till bokning då det finns ett attribut i bokning som heter book event och då tyckte
-    jag att de skulle vara kopplade till varandra men det är bara sekreteraren som kan boka händelser. Kalender klassen
-    har bara ett attribut och den är att visa händelser som sker i klubben däreför är det bara ett attribut som ska visar
-    alla händelser och den har då alla attribut som Event klassen har.</p>
-    <h3>Peer Review 1</h3>
-    <p>We have done a peer review of your workshop 1 and here comes our feedback:
+    Händelse klassen har vi kopplat till bokning då det finns ett attribut i bokning som heter book event och då tyckte
+    vi att de skulle vara kopplade till varandra men det är bara sekreteraren som kan boka händelser.</p>
+    <p> Kalender klassen ansvarar bara för att visa händelser som sker i klubben.</p>
 
-        As a developer the model helps but you don’t really know what the role that is linked to member has for meaning in the organisation but other than that it helps and it’s good associations.
+    <h3>Peer Review, produced 1</h3>
+    <p>We have done a peer review of your workshop 1 and here comes our feedback:</p>
+    <p>
 
-        As a secretary you get a good understanding on how the organisation works and how the system is going to work. The only thing that you don’t know as a secretary is who is booking the ParkingLot for the boats.
+        As a developer the model helps but you don’t really know what the role that is linked to member has for meaning
+        in the organisation but other than that it helps and it’s good associations.</p>
+    <p>
 
-        The strong points of the model is that they have a Size class that boat and ParkingLot inherit from and it is really good that Event and Calendar are for them self with only association to each other.
+        As a secretary you get a good understanding on how the organisation works and how the system is going to work.
+        The only thing that you don’t know as a secretary is who is booking the ParkingLot for the boats.</p>
+    <p>
 
-        The only thing that we have to complain about is the naming on ParkingLot because when you first see it you think it’s about cars and not a parking for boats.
+        The strong points of the model is that there ia a Size class that boat and ParkingLot inherit from and it is
+        really good that Event and Calendar are for them self with only association to each other.</p>
+    <p>
 
-        The model has passed the grade 3 criteria.</p>
-    <h3>Peer Review 2</h3>
-    <p>We have done a peer review of your workshop 1 and here comes our feedback:
+        The only thing that we have to complain about is the naming on ParkingLot because when you first see it you think it’s
+        about cars and not a parking for boats.</p>
+    <p>
 
-        The Berth class in our mind is not necessary to have to understand the organisation but it’s not wrong to have it.
-        A member do not need to participates in an event, it only needs to look at the events that is coming up in the calendar so in our mind you don’t need to have an association from member to event.
-        The naming on the Berth class should we name dock instead because it’s easier to understand otherwise it was good naming on the classes and attributes.
+        The model has for sure passed the grade 3 criteria.</p>
+    <h3>Peer Review, produced 2</h3>
+    <p>We have done a peer review of your workshop 1 and here comes our feedback:</p>
+    <p>
 
-        As a developer we need to know more how the system should work for example, if you can register boats and who can book the boat locations and such.
+        A member does not need to participate in an event. The member only needs to look at the events that is coming up in the
+    calendar so in our mind you don’t need to have an association from member to event.</p>
+    <p>
+        The naming on the Berth class maybe should be named dock instead because it’s easier to understand otherwise
+    it was good naming on the classes and attributes.</p>
+    <p>
 
-        As a secretary you would understand how the organisation works with the members having boats and they are placed at the boat locations. The downside is that the secretary doesn’t know how the members are getting the boat locations and who is booking that.
+        As a developer we need to know more how the system should work for example, if you can register boats and who
+        can book the boat locations and such.</p>
+    <p>
 
-        The strong points of the model is that it’s easy to understand and the naming on the attributes are good.
+        As a secretary you would understand how the organisation works with the members having boats and they are placed
+        at the boat locations. The downside is that the secretary doesn’t know how the members are getting the boat locations
+        and who is booking that.</p>
+    <p>
+
+        The strong points of the model is that it’s easy to understand and the naming on the attributes are good.</p>
+    <p>
 
         Overall it’s a good model and have passed the grade 3 criteria.</p>
     <h3>Peer Review Received 1</h3>
-    <p>1. There are no association names. Try putting in some; this will make the whole model more
-        readable.
+    <p>1. There are no association names. Try putting in some and it will make the whole model more
+        readable.</p>
+    <p>
         2. We don’t understand what the domain model shows. For example: member is connected
         to boat. We don’t know why and there is no obvious connection between them. We don’t
         know what’s happening between these two classes. You tried to explain this by adding some
         attributes and operations inside the boat class, but it would be much more readable if you
         used association names instead.
+        </p>
+    <p>
         3. The main problem for the boat club was boat registration and berth assignment. This is
         unfortunately not inside your model.
+        </p>
+    <p>
         4. What do you mean by “Booking”? We’re not sure what it does or what does it do. “Booking”
-        could be an association instead of a separate class.
+        could be an association instead of a separate class.</p>
+    <p>
         5. Look at the classes “Login”, “Event” and “Calendar”. Do you really need them? The main
         problem for boat club was boat registration and berth assignment. Authentication will not
         be a big problem during implementation and calendar/events were not main issue for the
-        boat club.
+        boat club.</p>
+    <p>
         If you would improve the points we listed, we think you would pass for grade 3.
         Good luck!</p>
     <h3>Peer Review Received 2</h3>
-    <div>Era domän modell ser tydlig och omfattad ut.
-        Strukturen ser god ut och det är lätt att ser hur alla olika klasser förbindas tillsammans.
-        Klasserna verkar har ett korrekt användning av attributionerna.
-        En sammanfattning av vad som är bra:
+    <div>
+        <p>Eran domän modell ser tydlig och omfattad ut.</p>
+        <p>
+        Strukturen ser god ut och det är lätt att ser hur alla olika klasser förbindas tillsammans.</p>
+        <p>
+        Klasserna verkar har ett korrekt användning av attributionerna.</p>
+
+        <h4>En sammanfattning av vad som är bra:</h4>
         <p>1 – Rätt användning av attributionerna.</p>
         <p>2 - Alla krävande attributionerna finns i modellen.</p>
         <p>3 - Klasserna förbindas rätt med varandra.</p>
@@ -80,17 +115,24 @@
         blir tydligare vad en ”association” innehåller.</p>
         <p>2 - Försök inte att krossa linjerna med så många associationerna.</p>
         <p>3 - Några detailjer (tex. attributionerna) är svårt att läsa och bort strukit. Gärna undviker detta.</p>
-        En små tips för er är att använda ett fritt online UML modellering program eller nåt liknade så att er
-        modell ser mer professionell ut. Särskilt er första bilden kunde omstruktureras på olika platser så det
-        inte kommer att liknar ett webb av kaos. Men detta borde inte var ett stor problem inför betyg 3.
-        Också försök att skapa ett test modell först, var er kan fritt sudda bort och snabbt skriv ner alla
-        detaljer. Sedan skapa er modell på nytt på papper utan att styrka bort detailjer och använda ett tydlig
-        läsbar stil för text (jag kan för exempel inte läsa vilken attribut klassen ”Delete Boat” har).
+        <p>Ett tips för er är att använda ett fritt online UML modellering program eller nåt liknade så att er
+        modell ser mer professionell ut.</p>
+        <p>Särskilt er första bild kunde omstruktureras på olika platser så det
+        inte kommer att likna en webb av kaos.</p>
+        <p>
+        Detta borde dock inte var ett stort problem inför betyg 3.</p>
+        <p>
+        försök att skapa en test modell först, var er kan fritt sudda bort och snabbt skriv ner alla
+        detaljer.</p>
+        <p> Sedan skapa er modell på nytt på papper utan att styrka bort detailjer och använda ett tydlig
+        läsbar stil för text (jag kan för exempel inte läsa vilken attribut klassen ”Delete Boat” har).</p>
+        <p>
         Konklusion:
         Beträffande modellen själv är jag säkert att ni kan få betyg 3. Det borde dock vara bättre att det
         ser om er modell är digital så det kommer att ser snyggare är och därmed mer professionell och
-        strukturerad.</div>
-    <img src="Workshop1_3.JPG" width="700px" height="500px">
-    <p>Efter en att vi fått peer reviewsen så har vi ändrat modellen till bilden här ovanför</p>
+        strukturerad.</p></div>
+    <h4>Efter en att vi fått peer reviewsen så har vi ändrat modellen till bilden här ovanför</h4>
+    <img src="Workshop1_3.JPG" width="700" height="500">
+
 </body>
 </html>
